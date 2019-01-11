@@ -4,4 +4,5 @@
     <string name="calculate">Calculate</string>
     <string name="is_leap_year">%1$s is a leap year!</string>
     <string name="is_not_leap_year">%1$s is not a leap year.</string>
+    <string name="provide_input">Please provide a year</string>
 </resources>

@@ -23,12 +23,16 @@ public class LeapYearActivity extends AppCompatActivity {
     public void btnCalculateClicked(View view) {
         String inputYear = et_year_input.getText().toString();
 
-        if (LeapYearCalculator.isLeapYear(Integer.parseInt(inputYear))) {
-            tv_result.setText(getString(R.string.is_leap_year, inputYear));
-            tv_result.setTextColor(Color.GREEN);
+        if(!inputYear.isEmpty()){
+            if (LeapYearCalculator.isLeapYear(Integer.parseInt(inputYear))) {
+                tv_result.setText(getString(R.string.is_leap_year, inputYear));
+                tv_result.setTextColor(Color.GREEN);
+            } else {
+                tv_result.setText(getString(R.string.is_not_leap_year, inputYear));
+                tv_result.setTextColor(Color.RED);
+            }
         } else {
-            tv_result.setText(getString(R.string.is_not_leap_year, inputYear));
-            tv_result.setTextColor(Color.RED);
+            tv_result.setText(getString(R.string.provide_input));
         }
     }
 }
