@@ -34,8 +34,17 @@ public class LeapYearCalculatorTest {
 
     @Test
     public void extraTest4Rule(){
-
         testYear( true, 2016);
+    }
+
+    @Test
+    public void leapYearNot4Rule(){
+        testYear(false, 2017);
+    }
+
+    @Test
+    public void extraTestNot4Rule(){
+        testYear(false, 1901);
     }
 
     private void testYear(boolean expectedResult, int year){
