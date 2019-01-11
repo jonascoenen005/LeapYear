@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LeapYear</string>
+    <string name="enter_year">Enter a year</string>
+    <string name="calculate">Calculate</string>
 </resources>
