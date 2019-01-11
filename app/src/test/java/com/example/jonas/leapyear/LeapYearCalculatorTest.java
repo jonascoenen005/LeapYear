@@ -11,4 +11,9 @@ public class LeapYearCalculatorTest {
     public void leapYear400Rule(){
         assertEquals(true, LeapYearCalculator.isLeapYear(1600));
     }
+
+    @Test
+    public void leapYear100Rule(){
+        assertEquals(false, LeapYearCalculator.isLeapYear(1700));
+    }
 }
