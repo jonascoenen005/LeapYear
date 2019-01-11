@@ -9,11 +9,16 @@ public class LeapYearCalculatorTest {
 
     @Test
     public void leapYear400Rule(){
-        assertEquals(true, LeapYearCalculator.isLeapYear(1600));
+        testYear(true, 1600);
     }
 
     @Test
-    public void leapYear100Rule(){
-        assertEquals(false, LeapYearCalculator.isLeapYear(1700));
+    public void leapYear100Rule() {
+        testYear(false, 1700);
     }
+
+    private void testYear(boolean expectedResult, int year){
+        assertEquals(expectedResult, LeapYearCalculator.isLeapYear(year));
+    }
+
 }
