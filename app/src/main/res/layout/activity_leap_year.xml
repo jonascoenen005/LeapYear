@@ -48,6 +48,7 @@
         android:background="@color/colorPrimary"
         android:text="@string/calculate"
         android:textColor="@android:color/white"
+        android:onClick="btnCalculateClicked"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_result" />
 </android.support.constraint.ConstraintLayout>
